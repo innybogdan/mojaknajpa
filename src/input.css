@@ -1,0 +1,172 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --theme-mycolor:#11ce63;
+}
+
+
+@font-face {
+    font-family: textFont;
+    src: url(../font/Roboto_Condensed-Light.woff2);
+}
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-family: textFont;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    
+    .container {
+      margin: 0 auto;
+    }
+}
+
+@layer components {
+  .btn {
+    @apply w-fit bg-red-500 text-lg text-white uppercase p-2 font-semibold;
+  }
+}
+
+.heightFlex {
+  min-height: calc(100vh - 555px);
+}
+
+.deactive {
+  display: none;
+}
+
+.menu {
+    left: -110%; 
+}
+
+.activeMenu {
+    height: calc(100vh - 116px);
+    left: 0;
+    top: 68px;
+    background-color: #fff;
+    color: #000;
+    transition: left .1s linear;  
+}
+
+.nav-link {
+    border-bottom: 1px solid #363636;
+     @media (min-width: 768px) {
+      font-weight: 400;
+      border:none;
+      padding: 0 4px;
+      transition: background-color, .15s linear;
+     }
+}
+
+.nav-link:hover {
+    @media (min-width: 768px) {
+      color: white;
+      background-color: #EF4444;
+      
+     }
+}
+
+
+/*------------------------
+         ACCORDION
+------------------------*/
+#noPageScroll {
+  overflow-y: hidden;
+}
+
+.accordion__title {
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 5px;
+  border: 2px #ececec solid;
+  position: relative;
+  cursor: pointer;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.accordion__title:after {
+  content: "+";
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  background-color: var(--theme-mycolor);
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  text-align: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+.accordion__title--active {
+  border-color: #29D58E;
+  background-color: #29D58E;
+  color: #fff;
+}
+.accordion__title--active:after {
+  background-color: #27cc88;
+  color: #fff;
+}
+.accordion__text {
+  padding: 20px;
+  border: 2px #ececec solid;
+  border-top: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+tr:nth-child(even) {
+    background-color: #dadada;
+}
+
+/*------------------------
+         SLIDER
+------------------------*/
+/* @keyframes slide {
+  0% {
+    left: 0%;
+  }
+  5% {
+    left: -100%;
+  }
+  20% {
+    left: -100%;
+  }
+  25% {
+    left: -200%;
+  }
+  40% {
+    left: -200%;
+  }
+  45% {
+    left: -300%;
+  }
+  60% {
+    left: -300%;
+  }
+  65% {
+    left: -400%;
+  }
+  80% {
+    left: -400%;
+  }
+  85% {
+    left: -500%;
+  }
+  100% {
+    left: -500%;
+  }
+
+} */

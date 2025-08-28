@@ -1,0 +1,47 @@
+         ACCORDION
+/* -------------------------- */
+.accordion__title {
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 5px;
+  border: 1px #ececec solid;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.accordion__title:after {
+  content: "\f00d";
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  background-color: #ececec;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font: normal normal normal 14px/48px FontAwesome;
+  font-size: 16px;
+  text-align: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #999999;
+}
+.accordion__title--active {
+  border-color: #4ade80;
+  background-color: #4ade80;
+  color: #fff;
+}
+.accordion__title--active:after {
+  background-color: #4ade80;
+  color: #fff;
+}
+.accordion__text {
+  padding: 20px;
+  border: 2px #ececec solid;
+  border-top: none;
+  font-size: 14px;
+  line-height: 24px;
+}

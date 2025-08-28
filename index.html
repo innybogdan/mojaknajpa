@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+
+    <div class="container">
+
+            <header>
+                
+            </header>
+
+        <main>
+            <section">
+                <div class="h-screen bg-[url('../images/tlo-mob.jpg')] bg-cover flex items-center bg-no-repeat">                 
+                        <div class="container">
+                            <div class="text-center text-white h-[280px]">                            
+                                <h1 class="mb-6 uppercase text-4xl tracking-[3px] 
+                                leading-[40px] tablet:text-6xl">Restauracja kreatywna</h1>
+                                <h2 class="text-xl mt-2 mb-10 font-semibold tracking-[1px] tablet:text-3xl">Najczęściej odwiedzana w mieście</h2>
+                                <button class="btn tracking-[.10em]"><a href="reserve.html">Zarezerwuj</a></button>	                            			
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section class="py-2">
+                    <div class="container flex justify-center">
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <div class="text-center">
+                                <img src="./images/icons/fresh.svg" alt="" class="w-8 h-8 mx-auto">                            
+                                <h4 class="uppercase my-6 text-xl">Zawsze świeże</h4>
+                                <p class="text-gray-700">U nas znajdziesz zawsze świeże potrawy! Wszystko przygotowujemy ze specjalnie wyselekcjonowanych składników.</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./images/icons/users.svg" alt="" class="w-8 h-8 mx-auto">
+                                <h4 class="uppercase my-6 text-xl">Najlepsi kucharze</h4>
+                                <p class="text-gray-700">Wszystkie nasze potrawy są przygotowywane przez 
+                                    najlepszych kucharzy. U nas znajdziesz wybór najlepszych dań z całego świata!</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./images/icons/hearth.svg" alt="" class="w-8 mx-auto">
+                                <h4 class="uppercase my-6 text-xl">Doskonała obsługa</h4>
+                                <p class="text-gray-700">Doskonała obłsuga to cecha, która wyróżnia naszą restaurację. Wszystko po to abyś u nas poczuł się jak najlepiej!</p>
+                            </div>
+                        </div>    
+                    </div>
+            </section>
+
+            <section>
+                <div class="h-[300px] flex items-center justify-center bg-cover bg-no-repeat bg-center bg-[url('../images/grill2.jpg')]">
+                    <p class="text-white text-2xl uppercase tracking-wider font-semibold">Nasze najlepsze dania</p>
+                </div>
+            </section>
+
+            <!-- Front Slider i Godziny otwarcia -->           
+            <section>
+                <div class="h-[373px] w-full overflow-hidden flex flex-nowrap text-center mt-2" id="slider">
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s1.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s2.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s3.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s4.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s5.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s6.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s7.jpg" alt="" class="mx-auto">
+                    </div>
+                    <div class="flex-none w-full flex flex-col items-center justify-center">
+                        <img src="./images/s8.jpg" alt="" class="mx-auto">
+                    </div>
+                </div>
+                
+                
+                <div class="pl-4 pr-4 pt-2 mt-2 bg-black text-white times-open">
+                    <h3 class="text-2xl text-center mb-4">Godziny otwarcia</h3>
+                    <hr>
+                    <p class="my-4">Poniedziałek: &nbsp 12:00-20:00</p>
+                    <hr class="seperated">
+                    <p class="my-4">Wtorek-Czwartek: &nbsp 10:00-22:00</p>
+                    <hr class="seperated">
+                    <p class="my-4">Piątek: &nbsp 10:00-24:00</p>
+                    <hr class="seperated">
+                    <p class="my-4">Sobota: &nbsp 12:00-02:00</p>
+                    <hr class="seperated">
+                    <p class="my-4">Niedziela: &nbsp 12:00-22:00</p>
+                    <hr class="seperated">
+                </div>
+            </section>
+
+            <!-- Front Opinie klientow -->
+            <section class="h-[740px] mt-2 flex items-center bg-[url('../images/about_photo.jpg')] bg-cover bg-no-repeat">
+                <div class="container">
+                    <div class="pb-14">
+                        <h2 class="text-white font-semibold text-center text-2xl uppercase">Wybrane opinie</h2>
+                        <img src="./images/icons/opinion.svg" alt="" class="w-10 h-10 mx-auto">
+                    </div>
+                    <div>
+                        
+                        <div class="bg-white mx-2 mb-2 p-4">
+                            <p class="mb-4 text-gray-700">
+                                Chwalę pyszny krem z pomidorów, krewetki z dodatkiem znakomitych oliw smakowych oraz dania z makaronów. 
+                                Jedzenie jest ładnie podane i bardzo smaczne. Obsługa miła i dobrze zorientowana w ofercie restauracji.
+                            </p>
+                            <h4 class="font-semibold">Janusz Król</h4>
+                        </div>
+
+                        <div class="bg-white mx-2 p-4">
+                            <p class="mb-4 text-gray-700">
+                                Restauracja oferuje dania nowoczesnej kuchni polskiej i europejskiej.
+                                W tej pozytywnie mocno mięsnej knajpie można zjeść żeberka w wykwintnym wydaniu, burgery oraz wyrafinowane desery.
+                            </p>
+                            <h4 class="font-semibold">Krzysztof Wolski</h4>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="mt-[1px]">
+            <footer>
+                
+            </footer>
+        </div>
+        
+   </div>
+    
+    <script src="main.js"></script>
+    <script src="./js/slider.js"></script>
+    
+</body>
+</html>
